@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <title>Service Pages</title>
+
+  <style>
+
+  body {
+    background-color: #2C2F33;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #36393F;
+    border-radius: 10px;
+    animation: pulse 2s ease-out infinite;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  @keyframes pulse {
+    0% {
+      background-color: #36393F;
+    }
+    50% {
+      background-color: #2C2F33;
+    }
+    100% {
+      background-color: #36393F;
+    }
+  }
+
+  .h1 {
+    font-size: 48px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  .feature-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+
+  .btn {
+    background-color: #7289DA;
+    border-color: #7289DA;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: all 0.2s ease-out;
+  }
+
+  .btn:hover {
+    background-color: #677BC4;
+    border-color: #677BC4;
+    cursor: pointer;
+  }
+
+  .btn a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .rounded-circle {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .shadow-lg {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+  }
+
+</style>
+
+    
+</head>
+<body>
+
+  <!-- -----------------------------------------------------Start Services Section --------------------------------------- -->
+  <div class="container pt-5 my-5 shadow-lg p-3 mb-5 rounded justify-content-center" style="background:#eef3ef;">
+    <div class="h1 justify-content-center text-primary" style="text-align: center;">Services</div>
+    <div class="row py-5 d-flex px-5">
+
+
+      <div class="col-lg-3">
+        <div class="feature-icon fs-2 mb-5 text-center" style="border-radius: 20px;">
+          <img src="images/icon.jpg" alt="..." class="rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+            style="width: 100px; height: 100px;">
+        <h5> <button type="button" class="btn btn-outline-dark px-5"><a href="Hospitals/hospital.html">Hospital</a></button></h5>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="feature-icon fs-2 mb-3 text-center" style="border-radius: 20px;">
+          <img src="images/bank.png" alt="..." class="rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+            style="width: 100px; height: 100px;">
+          <h5><button type="button" class="btn btn-outline-dark px-5"> <a href="Banks/banks.html"> Banks</a></button></h5>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="feature-icon fs-2 mb-3 text-center" style="border-radius: 20px;">
+          <img src="images/office.webp" alt="..." class="rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+            style="width: 100px; height: 100px;">
+          <h5> <button type="button" class="btn btn-outline-dark px-5">Office</button></h5>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="feature-icon fs-2 mb-3 text-center" style="border-radius: 20px;">
+          <img src="images/500px-Plus_symbol.svg.png" alt="..."
+            class="rounded-circle shadow-lg p-3 mb-5 bg-white rounded" style="width: 100px; height: 100px;">
+          <h5>More</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- -----------------------------------------------------End Service Section --------------------------------------- -->
+</body>

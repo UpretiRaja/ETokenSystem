@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Token System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+  position: relative;
+}
+
+.navbar .btn-login,
+.navbar .btn-signup {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .btn-login:hover,
+.navbar .btn-signup:hover {
+  background-color: #0056b3;
+}
+
+.navbar .btn-login {
+  margin-right: 10px;
+}
+
+.navbar .btn-signup {
+  margin-right: 10px;
+}
+
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+
+.dropdown-toggle .fas {
+  margin-right: 5px;
+}
+
+.dropdown-toggle:hover {
+  background-color: transparent;
+}
+
+.dropdown-toggle:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Start Nav Bar Section -->
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="images/smart.png" width="100%" height="75px" class="d-inline-block align-top" alt="">
+        </a>
+  
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-around mb-md-0">
+            <li><a href="index.html" class="nav-link px-5 link-secondary">Home</a></li>
+            <li><a href="About/about.html" target="_blank" class="nav-link px-5 link-dark">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hospital</a></li>
+                <li><a class="dropdown-item" href="#">Banks</a></li>
+                <li><a class="dropdown-item" href="#">Office</a></li>
+              </ul>
+            </li>
+            <li><a href="Contact Us/contactus.html" target="_blank" class="nav-link px-5 link-dark">Contact Us</a></li>
+          </ul>
+  
+          <!-- <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Option 1</a>
+              <a class="dropdown-item" href="#">Option 2</a>
+              <a class="dropdown-item" href="#">Option 3</a>
+            </div>
+          </div> -->
+
+          <div class="navbar-nav ms-auto">
+            <a class="btn btn-primary me-2" href="#" role="button">Login</a>
+            <a class="btn btn-secondary" href="#" role="button">Signup</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <script>
+  
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+    var dropdownToggle = document.querySelector('.dropdown-toggle');
+  
+    dropdownToggle.addEventListener('mouseover', function () {
+      dropdownMenu.classList.add('show');
+    });
+  
+    dropdownToggle.addEventListener('mouseout', function () {
+      dropdownMenu.classList.remove('show');
+    });
+  
+    dropdownMenu.addEventListener('mouseover', function () {
+      dropdownMenu.classList.add('show');
+    });
+  
+    dropdownMenu.addEventListener('mouseout', function () {
+      dropdownMenu.classList.remove('show');
+    });
+  </script>
+  
+<!-- ------------------------------------------------NavBar End Section----------------------------------------- -->
+
+<!-- -----------------------------------------------------Start Body Section --------------------------------------- -->
+<div class="container-fluid d-lg-flex align-items-lg-center content-space-t-3 content-space-lg-0 min-vh-lg-50 pb-5"
+  style="padding-top: 250px; background:url(images/background.jpeg);background-repeat: no-repeat;background-size: cover;">
+
+  <!-- Heading -->
+  <div class="container">
+    <div class="w-100">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="mb-5">
+            <h3 class="bodytext">WELCOME TO</h3>
+            <h1 class="display-2 mb-3" style="color:#174179;font-weight: 700; letter-spacing: 8px;">
+              SMART TOKEN SYSTEM
+            </h1>
+            <p class="lead text-black w-300" style="color:black ">It is the faster and most convenient way to reserve
+              the tokens used in different organizations
+              like Government Offices, Banks, and Hospitals. Login navigate and find out yourselves and if time
+              permits
+              leave your valuable feedback.</p>
+          </div>
+          <div class="d-grid d-sm-flex gap-3">
+            <span class="border border-warning" style="border-radius: 30px;">
+              <a class="btn btn-dark btn-transition px-5 py-3" style="border-radius: 30px;" href="Learn More/learnmore.html" target="_blank">
+                Learn More
+              </a>
+            </span>
+  
+          </div>
+        </div>
+        <!-- End Col -->
+        <div class="col-lg-4 d-lg-block position-absolute top-0 end-0 " style="margin-top: 6.75rem;">
+          <image class="img-fluid d-none d-lg-block" width="450px" height="600" src="images/11.png"></image>
+        </div>
+  
+      </div>
+
+      <!-- End Row -->
+    </div>
+  </div>
+  
+  <!-- End Title & Description -->
+  
+</div>
+<!-- -----------------------------------------------------End Body Section --------------------------------------- -->
+
+<!-- -----------------------------------------------------Start Services Section --------------------------------------- -->
+<div class="container pt-5 my-5 shadow-lg p-3 mb-5 rounded justify-content-center" style="background:#eef3ef;">
+  <div class="h1 justify-content-center text-primary" style="text-align: center;">Services</div>
+  <div class="row py-5 d-flex px-5">
+    <div class="col-lg-3">
+        <div class="feature-icon fs-2 mb-3 text-center" style="border-radius: 20px;">
+          <img src="images/icon.jpg" alt="..." class="rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+            style="width: 125px; height: 125px;">
+          <h5> Hospital </h5>
+        </div>
+      </div>
+    
+      <div class="col-lg-3">
+        <div class="feature-icon fs-2 mb-3 text-center" style="border-radius: 20px;">
+          <img src="images/bank.png" alt="..." class="rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+            style="width: 125px; height: 125px;">
+          <h5> Banks</h5>
+        </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="feature-icon fs-2 mb-3 text-center" style="border-radius: 20px;">
+        <img src="images/office.webp" alt="..." class="rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+          style="width: 125px; height: 125px;">
+        <h5>Government Offices</h5>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="feature-icon fs-2 mb-3 text-center" style="border-radius: 20px;">
+        <img src="images/500px-Plus_symbol.svg.png" alt="..." class="rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+          style="width: 125px; height: 125px;">
+        <h5>More</h5>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- End Services Section -->
+
+      <!-- -----------------------------------------------------Start Working Section --------------------------------------- -->
+
+      <div class="container pt-5 my-5 shadow-lg p-3 mb-5 rounded justify-content-center" style="background:#eef3ef;">
+        <div class="h1 justify-content-center text-primary" style="text-align: center;">How Smart Token Works ?</div>
+        <div class="row py-5 d-flex px-5">
+      
+          <div class="col-lg-3">
+            <div class="feature-icon fs-2 mb-3 text-center" style="border-radius: 20px;">
+              <img src="images/people-fill.svg" alt="..."
+                class="shadow p-3 mb-5 bg-white rounded rounded-circle border border-primary border-5"
+                style="width: 125px; height: 125px;">
+              <span class="text-primary">......</span>
+              <h5>Create Account</h5>
+              <p class="lead" style="font-size: 16px;">Register, get verified and login to STS</p>
+            </div>
+          </div>
+      
+          <div class="col-lg-3">
+            <div class="feature-icon fs-2 mb-3 text-center">
+              <span class="text-success">......</span>
+              <img src="images/bank.png" alt="..."
+                class="shadow p-3 mb-5 bg-white rounded rounded-circle border border-success border-5"
+                style="width: 125px; height: 125px;">
+              <span class="text-success">......</span>
+              <h5>Load Funds</h5>
+              <p class="lead" style="font-size: 16px;">Load funds via our partner wallets</p>
+            </div>
+          </div>
+      
+      
+          <div class="col-lg-3">
+            <div class="feature-icon fs-2 mb-3 text-center">
+              <span class="text-warning">......</span>
+              <img src="images/pay bill.png" alt="..."
+                class="shadow p-3 mb-5 bg-white rounded rounded-circle border border-warning border-5"
+                style="width: 125px; height: 125px;">
+              <span class="text-warning">......</span>
+              <h5>Pay Bill</h5>
+              <p class="lead" style="font-size: 16px;">You are all set to pay</p>
+            </div>
+          </div>
+      
+          <div class="col-lg-3">
+            <div class="feature-icon fs-2 mb-3 text-center">
+              <span class="text-danger">......</span>
+              <img src="images/queue.png" alt="..."
+                class="shadow p-3 mb-5 bg-white rounded rounded-circle border border-danger border-5"
+                style="width: 125px; height: 125px;">
+              <h5>Wait your turn</h5>
+              <p class="lead" style="font-size: 16px;">Wait your turn in a queue</p>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+
+  <!-- -----------------------------------------------------End Working Section --------------------------------------- -->
+
+
+
+    <!-- -----------------------------------------------------Start About Us Section --------------------------------------- -->
+    <!-- <div class="container pt-5 mt-5 shadow-lg p-3 mb-5 rounded justify-content-center"
+      style="background:#eef3ef;">
+      <div class="h1 justify-content-center text-primary" style="text-align: center;">About Us</div>
+      <div class="row py-5 px-5">
+        <div class="col-lg-6">
+            <img src="images/about.jpg" alt="..." class="img-fluid rounded">
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="feature-icon fs-2 mb-3">
+              <h5 class="text-center">Who We Are?</h5>
+              <p class="text-black text-justify">Smart Token System is a digital platform that revolutionizes the way token
+                reservations are made in various organizations. We aim to provide a faster and more convenient way for people
+                to reserve tokens in government offices, banks, hospitals, and restaurants. Our system streamlines the token
+                reservation process, reducing waiting times and enhancing overall efficiency.</p>
+            </div>
+          
+            <div class="feature-icon fs-2 mb-3">
+              <h5 class="text-center">Our Mission</h5>
+              <p class="text-black text-justify">Our mission is to simplify token reservations and improve the customer
+                experience in different organizations. We strive to create a seamless process where individuals can easily
+                reserve tokens and manage their appointments. By leveraging technology, we aim to enhance efficiency and
+                eliminate long waiting times, ultimately making the reservation process hassle-free for everyone.</p>
+            </div>
+          </div>
+        </div>
+    </div> -->
+    <!-- End About Us Section -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <img class="card-img-right flex-auto d-none d-lg-block" src="images/im.png">
+        </div>
+    
+        <div class="col-lg-6 pb-5 px-4">
+          <div class="d-flex align-items-center w-900 pt-5 mt-5">
+            <h1 class="text-primary text-center">Services from Everywhere</h1>
+          </div>
+          <p class="lead pb-5">It is the faster and most convenient way to reserve the tokens.</p>
+          <a class="btn btn-primary" href="#">Send to Mobile Number</a>
+          <a class="btn btn-outline-primary" href="Learn More/learnmore.html">More Info ></a>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- -----------------------------------------------------Start Footer Section --------------------------------------- -->
+    <footer>
+      <div>
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white bg-primary">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section>
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 px-5 py-2">
+                  <img src="images/smart white color.png" class="img-fluid px-3" alt="Responsive image">
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5>About us</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="About/about.html" class="nav-link p-0 text-white">Introduction</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5>Services</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link p-0 text-white">Banks</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link p-0 text-white">Hospital</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link p-0 text-white">Offices</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5>Chat Support</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link p-0 text-white">Whatsapp: +977-981-2283875</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link p-0 text-white">Gmail: sts@info@gmail.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-center">Get in Touch</h5>
+                  <img src="images/qr.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </section>
+            <!-- Section: Links -->
+          </div>
+          <!-- Grid container -->
+        </footer>
+        <!-- End Footer Section -->
+      </div>
+    </footer>
+    
+  </body>
+  </html>
+  <!-- End Scripts Section -->
+    
+    
+    
+              
+
+
+    
